@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CompositeDictionary
 {
-    public interface IReadOnlyNestedDictionary<TPrimaryKey, TSecondaryKey, TValue>
+    public interface IReadOnlyCompositeDictionary<TPrimaryKey, TSecondaryKey, TValue>
         where TPrimaryKey : notnull
         where TSecondaryKey : notnull
     {

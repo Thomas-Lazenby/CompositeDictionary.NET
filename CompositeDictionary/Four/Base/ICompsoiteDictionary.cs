@@ -41,7 +41,7 @@ namespace CompositeDictionary
 
 
         /// <summary>
-        /// Attempts to retrieve a value from the nested dictionaries based on the provided keys.
+        /// Attempts to retrieve a value from the composite dictionaries based on the provided keys.
         /// </summary>
         /// <param name="primaryKey">The primary key to search in the main dictionary.</param>
         /// <param name="secondaryKey">The secondary key to search in the sub-dictionary associated with the primary key.</param>

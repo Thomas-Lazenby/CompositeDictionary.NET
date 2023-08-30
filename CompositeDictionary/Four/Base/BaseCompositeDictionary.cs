@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace CompositeDictionary
 {
-    public abstract class BaseCompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue> : IReadOnlyNestedDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue>, ICompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue>
+    public abstract class BaseCompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue> : IReadOnlyCompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue>, ICompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue>
         where TPrimaryKey : notnull
         where TSecondaryKey : notnull
         where TThirdKey : notnull

@@ -10,28 +10,28 @@ namespace CompositeDictionary
     public static class CompositeDictionaryExtensions
     {
 
-        public static IReadOnlyNestedDictionary<TPrimaryKey, TSecondaryKey, TValue> AsReadOnly<TPrimaryKey, TSecondaryKey, TValue>(this BaseCompositeDictionary<TPrimaryKey, TSecondaryKey, TValue> nestedDictionary)
+        public static IReadOnlyCompositeDictionary<TPrimaryKey, TSecondaryKey, TValue> AsReadOnly<TPrimaryKey, TSecondaryKey, TValue>(this ICompositeDictionary<TPrimaryKey, TSecondaryKey, TValue> compositeDictionary)
             where TPrimaryKey : notnull
             where TSecondaryKey : notnull
         {
-            return new ReadOnlyNestedDictionary<TPrimaryKey, TSecondaryKey, TValue>(nestedDictionary);
+            return new ReadOnlyCompositeDictionary<TPrimaryKey, TSecondaryKey, TValue>(compositeDictionary);
         }
 
-        public static IReadOnlyNestedDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TValue> AsReadOnly<TPrimaryKey, TSecondaryKey, TThirdKey, TValue>(this BaseCompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TValue> nestedDictionary)
+        public static IReadOnlyCompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TValue> AsReadOnly<TPrimaryKey, TSecondaryKey, TThirdKey, TValue>(this ICompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TValue> compositeDictionary)
             where TPrimaryKey : notnull
             where TSecondaryKey : notnull
             where TThirdKey : notnull
         {
-            return new ReadOnlyNestedDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TValue>(nestedDictionary);
+            return new ReadOnlyCompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TValue>(compositeDictionary);
         }
 
-        public static IReadOnlyNestedDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue> AsReadOnly<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue>(this BaseCompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue> nestedDictionary)
+        public static IReadOnlyCompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue> AsReadOnly<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue>(this ICompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue> compositeDictionary)
             where TPrimaryKey : notnull
             where TSecondaryKey : notnull
             where TThirdKey : notnull
             where TFourthKey : notnull
         {
-            return new ReadOnlyNestedDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue>(nestedDictionary);
+            return new ReadOnlyCompositeDictionary<TPrimaryKey, TSecondaryKey, TThirdKey, TFourthKey, TValue>(compositeDictionary);
         }
     }
 }
