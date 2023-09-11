@@ -2,13 +2,9 @@
 
 namespace CompositeDictionary
 {
-    public interface ICompositeDictionary
+    public interface ICompositeDictionary : IReadOnlyCompositeDictionary
     {
         void Clear();
-
-        int Count { get; }
-        
-        bool IsEmpty();
 
     }
 }

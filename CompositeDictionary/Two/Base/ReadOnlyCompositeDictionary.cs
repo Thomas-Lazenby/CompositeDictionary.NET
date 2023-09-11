@@ -33,6 +33,8 @@ namespace CompositeDictionary
 
         public int Count => _baseCompositeDictionary.Count;
 
+        public TValue this[TPrimaryKey primaryKey, TSecondaryKey secondaryKey] => _baseCompositeDictionary[primaryKey, secondaryKey];
+
         public bool IsEmpty() => _baseCompositeDictionary.IsEmpty();
     }
 }

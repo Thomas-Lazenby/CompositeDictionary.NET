@@ -26,6 +26,8 @@ namespace CompositeDictionary
         public bool TryGetValue(TPrimaryKey primaryKey, TSecondaryKey secondaryKey, TThirdKey thirdKey, out TValue value) => _compositeDictionary.TryGetValue(primaryKey, secondaryKey, thirdKey, out value);
         public int Count => _compositeDictionary.Count;
         public bool IsEmpty() => _compositeDictionary.IsEmpty();
+
+        public IEnumerable<TValue> GetValuesByPrimaryAndSecondary(TPrimaryKey primaryKey, TSecondaryKey secondaryKey) => _compositeDictionary.GetValuesByPrimaryAndSecondary(primaryKey, secondaryKey);
     }
 }
 
