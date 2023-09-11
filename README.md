@@ -4,6 +4,11 @@
 The Composite Dictionary library provides an implementation of nested dictionaries, which allow for more intuitive and organized data access based on multiple key hierarchies. 
 Which is especially beneficial when you need to manage complex data relationships without flattening or complicating key structures.
 
+# Archived
+This project has been archived, potentially on a temporary basis, due to a couple of critical considerations:
+
+- Niche Usage: Composite dictionaries serve a very niche purpose and may not be beneficial for a broad range of applications.
+- Potential for Bad Practice: Utilizing composite dictionaries can sometimes encourage practices that overlook the importance of properly hashing custom structs or utilizing tuples, which are well-handled in C# natively.
 
 ## Why Use Composite Dictionary?
 - Multi-key Access: Instead of relying on concatenated or composite keys, this library allows for a structured way to access values using multiple discrete keys.
@@ -88,10 +93,3 @@ var anotherDictionary = new NestedDictionary<string, string, int, int>();
 schoolResults.Merge(anotherDictionary);
 ```
 The Merge function combines the contents of anotherDictionary into schoolResults. If there are any overlapping keys, the values from anotherDictionary will overwrite those in schoolResults.
-
-## Contribution
-
-Contributions are welcomed! Please see CONTRIBUTING.md for details on how to contribute, coding standards, and the process for submitting pull requests to us.
-
-## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
